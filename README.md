@@ -10,5 +10,11 @@
 
 
 ### 참고자료 ###
+  ##### TOOLS #####
   <li> <strong>도커 이미지 사용법   </strong><li>
   <li> https://subicura.com/2017/02/10/docker-guide-for-beginners-create-image-and-deploy.html </li>
+  <li> 
+  
+  ##### ML ######
+  <li> ML </li>
+  <li> https://otexts.com/fppkr/arima.html </li>
