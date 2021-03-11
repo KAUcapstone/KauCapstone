@@ -5,7 +5,7 @@
   <li> <strong> 상반기 </strong>
   <li> https://dacon.io/competitions/official/235709/overview/description/ </li>
   <li> <strong> 하반기 </strong></li>
-    <li> https://dacon.io/competitions/official/235709/overview/description/ </li>
+    <li> https://www.oss.kr/dev_competition# </li>
 </ul>
 
 
