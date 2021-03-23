@@ -1,8 +1,6 @@
 # KauCapstone
 
 ### 참여 대회 
-  <li> <strong> 상반기 </strong>
-  <li> https://dacon.io/competitions/official/235709/overview/description/ </li>
   <li> <strong> 하반기 </strong></li>
     <li> https://www.oss.kr/dev_competition# </li>
 
@@ -38,3 +36,10 @@
   <li>태웅 : 크롤링</li>
   <li>한섭 : 모델들 성능분석</li>
   <li>인태 : 간단하게 새로운 모델 한개 제작</li>
+
+  ##### 3/23 #####
+  
+  태웅 : 플랫폼 구조 설계, 현재까지 나온 플랫폼 구조에 대해 api 제작.
+  한섭 :  영수증 인식, 식재료 인식용 ui.  로그인 페이지용 ui, 글쓰기 ui. 모바일용 ui
+  인태형 - 기존 모델 공부, 기존 모델 사용 영수증 인식 , 한글 데이터 뽑기
+  지원이형 : 영수증 수집, 음식 데이터 수집, 음식 레시피 수집
