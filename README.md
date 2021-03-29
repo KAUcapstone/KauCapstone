@@ -1,10 +1,13 @@
 # KauCapstone
 
 ### 참여 대회 
-  <li> <strong> 상반기 </strong>
-  <li> https://dacon.io/competitions/official/235709/overview/description/ </li>
   <li> <strong> 하반기 </strong></li>
     <li> https://www.oss.kr/dev_competition# </li>
+
+### 산출물 ###
+
+* WBS 
+https://docs.google.com/spreadsheets/d/1ZL0O3Hfep1yAc8ocjcabDmIVb6teGYMLS7q_SwwGFBM/edit?usp=sharing
 
 
 
@@ -27,3 +30,5 @@
   * 김인태바보
   
   *
+  
+  
