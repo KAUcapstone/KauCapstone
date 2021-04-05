@@ -1,30 +1,44 @@
 from flask import Flask, jsonify, request, make_response, send_file
-import datetime as dt
+import pymysql
+import os
+from werkzeug.utils import secure_filename
+#
+# db = pymysql.connect(user="root")
+UPLOAD_FOLDER ='/workspace/KauCapstone/workspace/dataset'
 
 app = Flask(__name__)
 app.config["CORS_HEADERS"] = 'Content-Type'
 app.config['JSON_AS_ASCII'] = False
 
+#picture 업로딩(모델에 돌릴 사진 업로딩) 
+def upload_pic(file):
+    file_name =secure_filename(file.filename) 
+    file.save(os.path.join(UPLOAD_FOLDER,file_name))
+    # 여기서 모델을 돌릴모델 설정해줘야됨
+    file_name = UPLOAD_FOLDER+"/"+file_name
+    return file_name
 
-@app.route('/')
-def main():
-    return "this is main page"
+def predict_bill(filename):
+    #영수증 예측 모델을 여기서 돌림 
+    return ""
 
-@app.route('/image_search')
-def search_by_image():
-    return "image search page"
+def predict_food(filename):
+    #음식 예측 모델을 여기서 돌림
+    return ""
 
-@app.route("/mypage")
-def mypage():
-    return "my page"
-
-@app.route("/login")
-def login():
-    return "login"
-
-@app.route("/write_post")
-def write_post():
-    return "write posting page"
-
+@app.route('/bill_pic_prediction',methods=['POST'])
+def bill_prediction():
+    if request.method == 'POST':
+        file = request.files['file']
+        file_name = upload_pic(file)
+        print(file_name)
+        
+@app.route('/food_pic_prediction',methods = ['POST'])
+def food_prediction():
+    if request.method == 'POST':        
+        file = request.files['file']
+        file_name = upload_pic(file)
+        print(file_name)
+        
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port="5000", debug=True)
