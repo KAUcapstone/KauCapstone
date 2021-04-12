@@ -33,8 +33,9 @@ def bill_prediction():
     if request.method == 'POST':
         file = request.files['file']
         file_name = upload_pic(file)
-        print(file_name)
-        bill(file_name)
+        bill = bill(file_name)
+        bill.image_process()
+            
         
 @app.route('/food_pic_predicton',methods = ['POST'])
 def food_prediction():
@@ -48,5 +49,6 @@ def food_prediction():
 if __name__ == '__main__':
     bill = bill("/Users/andy/Desktop/KauCapstone/workspace/paper.jpg")
     bill.image_process()
+    
     app.run(host='0.0.0.0', port="5000", debug=True)
     
